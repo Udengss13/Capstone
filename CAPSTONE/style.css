@@ -2,63 +2,33 @@ body{
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  box-sizing: border-box;
 }
-/*Dropdown*/
-
-
-/*Navvar*/
-.header{
-  height: 100vh;
-}
-
-.navbar-style{
+.bg-deepink{
   background-color: hotpink;
- box-shadow: 0 5px 10px darkgray;
- text-transform: uppercase;
- position: fixed;
-   z-index: 1000;
- width: 100%;
 }
+.bg-border{
+  border-top: none;
+}
+/*Nav*/
+/* .imglogo{
+  width:25%; height:10vh;
+} */
 
-.logo{
-  height: 48px;
-
-}
-.icon-bar{
-  background: black;
-}
-li a{
-  color: white;
-
-}
 /*Banner-Text*/
 .home{
-  display: flex;
-  flex-wrap: wrap;
-  gap:1.5rem;
-  min-height: 100vh;
-  align-items: center;
+ 
   background:url(wallpaper1.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.home .content{
-  flex:1 1 40rem;
-  padding-top: 6.5rem;
-}
-
-.home .image{
-  flex:1 1 40rem;
-}
-
 .home .image img{
-  width:100%;
-  padding:1rem;
-}
+  width:100%; 
+} 
 
 .home .content h3{
-  font-size: 5rem;
+  font-size: 3rem;
   color:deeppink;
   text-align: center;
   text-transform: uppercase;
@@ -66,12 +36,9 @@ li a{
 }
 
 .home .content p{
-  font-size: 1.7rem;
   color:#666;
-  padding:1rem 0;
-  text-align: center;
-  padding: 30px;
-  margin-left: 20px;
+ line-height: 4vh;
+  
 }
 
 
@@ -169,7 +136,7 @@ li a{
 
 .footer-banner{
   background-color: #00061a;
-  height: 350px;
+ 
 }
 
 .text h1, .text p{

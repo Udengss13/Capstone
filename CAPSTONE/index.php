@@ -1,247 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>PetCo Homepage</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/mdb.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="https://kit.fontawesome.com/925a8d777d.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" type="text/css" href="style.css">
-<style>
-.dropbtn {
-  
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
+    <title>PetCo Homepage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
+    <link rel="stylesheet" type="text/css" href="style.css">
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  min-width: 160px;
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-
-</style>
 
 </head>
+
 <body>
+    <nav class="navbar navbar-expand-lg bg-deepink sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Logo" class="imglogo" style="width:100%; height:8vh" />
+            </a>
 
-<header class="bg">
-    <nav class="navbar navbar-style">
-      <div class="container" >
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#micon">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-          </button>
-          <a href=""><img class="logo" src="logo.png"></a>
         </div>
-        <div class="collapse navbar-collapse" id="micon" >
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="">home</a></li>
-          <li><a href="">Contact</a></li>
-          <li><a href="#imagesec">Gallery</a></li>
-          <li><a href="#about">Contact Us</a></li>
-          <div class="dropdown">
-
-
-<div class="dropdown">
-  <button class="dropbtn">Login</button>
-  <div class="dropdown-content">
-  <a href="login.php">User</a>
-  <a href="admin\admin_login.php">Administrator</a>
-  
-  </div>
-</div>
-
-        </ul>
+        <div class="floa-end me-5">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Login
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
-  
-<section class="home" id="home">
-  <div class="row">
-    <div class="col-md-6">
-    <div class="content">
-        <h3>Petco Shop</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas accusamus tempore temporibus rem amet laudantium animi optio voluptatum. Natus obcaecati unde porro nostrum ipsam itaque impedit incidunt rem quisquam eos!</p>
-        <a href="#" class="btn btn-primary">Login</a>
-        <a href="#" class="btn">sign up</a>
-    </div>
-    </div>
-    <div class="col-md-6">
-    <div class="image">
-        <img src="pets.png" alt="">
-    </div>
-  </div>
-  </div>
-</section>
- </header>
+    <section class="home" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-6">
+                    <div class="content mt-4">
+                        <h3 >Petco Shop</h3>
+                        <p class="text-wrap text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
+                            accusamus tempore
+                            temporibus rem amet laudantium animi optio voluptatum. Natus obcaecati unde porro nostrum
+                            ipsam itaque impedit, Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+                            totam eius eum consequatur fuga omnis porro molestiae sed repellendus, autem quo distinctio
+                            ut error architecto corporis? Repudiandae ad sint voluptas suscipit quod provident explicabo
+                            debitis laborum nemo alias nulla culpa!</p>
+                        <center>
+                            <div class="mb-3">
+                                <a href="#" class="btn btn-primary ">Login</a>
+                                <a href="#" class="btn btn-success">Sign Up</a>
+                            </div>
+                        </center>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 ">
+                    <div class="image mt-4 mb-4 ">
+                        <img src="pets.png" class="img-responsive" alt="Image Body">
+                    </div>
+                </div>
+            </div>
 
- 
- <hr>
+        </div>
+    </section>
+
+
     <section class="flex-sect" id="imagesec">
-    <div class="container-width">
-      <div class="flex-title" >This is the image of many cute pets!
-      </div>
-      <div class="flex-desc" id="io66v">A very memorable moment!
-      </div>
-      <div class="cards">
-        <div class="card">
-          <div class="card-header" id="ivzmn">
-          </div>
-          <div class="card-body">
-            <div class="card-title">PetCo Pet
+        <div class="container-width">
+            <div class="flex-title">This is the image of many cute pets!
             </div>
-            <div class="card-sub-title">Subtitle one
+            <div class="flex-desc" id="io66v">A very memorable moment!
             </div>
-            <div class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            <div class="cards">
+                <div class="card">
+                    <div class="card-header" id="ivzmn">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">PetCo Pet
+                        </div>
+                        <div class="card-sub-title">Subtitle one
+                        </div>
+                        <div class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header ch2">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">PetCo Pet
+                        </div>
+                        <div class="card-sub-title">Subtitle two
+                        </div>
+                        <div class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header ch3">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">PetCo Pet
+                        </div>
+                        <div class="card-sub-title">Subtitle three
+                        </div>
+                        <div class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header ch4">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">PetCo Pet
+                        </div>
+                        <div class="card-sub-title">Subtitle four
+                        </div>
+                        <div class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header ch5">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">PetCo Pet
+                        </div>
+                        <div class="card-sub-title">Subtitle five
+                        </div>
+                        <div class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header ch6">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">PetCo Pet
+                        </div>
+                        <div class="card-sub-title">Subtitle six
+                        </div>
+                        <div class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="card">
-          <div class="card-header ch2">
-          </div>
-          <div class="card-body">
-            <div class="card-title">PetCo Pet
-            </div>
-            <div class="card-sub-title">Subtitle two
-            </div>
-            <div class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header ch3">
-          </div>
-          <div class="card-body">
-            <div class="card-title">PetCo Pet
-            </div>
-            <div class="card-sub-title">Subtitle three
-            </div>
-            <div class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header ch4">
-          </div>
-          <div class="card-body">
-            <div class="card-title">PetCo Pet
-            </div>
-            <div class="card-sub-title">Subtitle four
-            </div>
-            <div class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header ch5">
-          </div>
-          <div class="card-body">
-            <div class="card-title">PetCo Pet
-            </div>
-            <div class="card-sub-title">Subtitle five
-            </div>
-            <div class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header ch6">
-          </div>
-          <div class="card-body">
-            <div class="card-title">PetCo Pet
-            </div>
-            <div class="card-sub-title">Subtitle six
-            </div>
-            <div class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="footer-banner" id="about">
-      <div class="container">
+    <footer class="footer-banner" id="about">
+
         <div class="container text">
             <h1>PETCO SHOP</h1>
             <p>Thank you for Visiting Petco Shop Enjoy An GodBless!</p>
             <br>
 
             <div class="row">
-          <div class="col-sm-3">
-            <ul class="follow">
-              <h3>FOLLOW US!</h3>
-              <p></p><a href="https://www.facebook.com/Udeng13">Facebook  <i class="fa-brands fa-facebook-square"></i></a><br>
-              <a href="https://www.facebook.com/messages/t/100008437094309">Messenger <i class="fa-brands fa-facebook-messenger"></i></a><br>
-              <a href="https://www.facebook.com/Udeng13">Instagram <i class="fa-brands fa-instagram"></i></a>
-            </ul>
-          </div>
-          <div class="col-sm-3">
-            <ul class="company">
-              <h3>Company</h3>
-              <a href="https://www.facebook.com/Udeng13"> About Us<i class="fa-solid fa-table-layout"></i></a><br>
-              <a href="https://www.facebook.com/messages/t/100008437094309">Our Service <i class="fa-brands fa-facebook-messenger"></i></a><br>
-              <a href="https://www.facebook.com/Udeng13">Privacy Policy <i class="fa-brands fa-instagram"></i></a>
-            </ul>
-          </div>
-          <div class="col-sm-3">
-            <ul class="company">
-              <h3>Company</h3>
-              <a href="https://www.facebook.com/Udeng13">Facebook  <i class="fa-brands fa-facebook-square"></i></a><br>
-              <a href="https://www.facebook.com/messages/t/100008437094309">Messenger <i class="fa-brands fa-facebook-messenger"></i></a><br>
-              <a href="https://www.facebook.com/Udeng13">Instagram <i class="fa-brands fa-instagram"></i></a>
-            </ul>
-          </div>
-          <div class="col-sm-3">
-            <ul class="company">
-              <h3>Company</h3>
-              <a href="https://www.facebook.com/Udeng13">Facebook  <i class="fa-brands fa-facebook-square"></i></a><br>
-              <a href="https://www.facebook.com/messages/t/100008437094309">Messenger <i class="fa-brands fa-facebook-messenger"></i></a><br>
-              <a href="https://www.facebook.com/Udeng13">Instagram <i class="fa-brands fa-instagram"></i></a>
-            </ul>
-          </div>
+                <div class="col-sm-3">
+                    <ul class="follow">
+                        <h3>FOLLOW US!</h3>
+                        <p></p><a href="https://www.facebook.com/Udeng13">Facebook <i
+                                class="fa-brands fa-facebook-square"></i></a><br>
+                        <a href="https://www.facebook.com/messages/t/100008437094309">Messenger <i
+                                class="fa-brands fa-facebook-messenger"></i></a><br>
+                        <a href="https://www.facebook.com/Udeng13">Instagram <i class="fa-brands fa-instagram"></i></a>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <ul class="company">
+                        <h3>Company</h3>
+                        <a href="https://www.facebook.com/Udeng13"> About Us<i
+                                class="fa-solid fa-table-layout"></i></a><br>
+                        <a href="https://www.facebook.com/messages/t/100008437094309">Our Service <i
+                                class="fa-brands fa-facebook-messenger"></i></a><br>
+                        <a href="https://www.facebook.com/Udeng13">Privacy Policy <i
+                                class="fa-brands fa-instagram"></i></a>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <ul class="company">
+                        <h3>Company</h3>
+                        <a href="https://www.facebook.com/Udeng13">Facebook <i
+                                class="fa-brands fa-facebook-square"></i></a><br>
+                        <a href="https://www.facebook.com/messages/t/100008437094309">Messenger <i
+                                class="fa-brands fa-facebook-messenger"></i></a><br>
+                        <a href="https://www.facebook.com/Udeng13">Instagram <i class="fa-brands fa-instagram"></i></a>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <ul class="company">
+                        <h3>Company</h3>
+                        <a href="https://www.facebook.com/Udeng13">Facebook <i
+                                class="fa-brands fa-facebook-square"></i></a><br>
+                        <a href="https://www.facebook.com/messages/t/100008437094309">Messenger <i
+                                class="fa-brands fa-facebook-messenger"></i></a><br>
+                        <a href="https://www.facebook.com/Udeng13">Instagram <i class="fa-brands fa-instagram"></i></a>
+                    </ul>
+                </div>
+            </div>
         </div>
-        </div>
-        
-      </div>
-  </footer>
- 
-    
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
 
 
-      
-
-      <script type="text/javascript" src="js/mdb.min.js"></script>
-        <script type="text/javascript"></script>
- 
 
 </body>
+
 </html>
