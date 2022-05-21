@@ -1,0 +1,185 @@
+body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+/*Dropdown*/
+
+
+/*Navvar*/
+.header{
+  height: 100vh;
+}
+
+.navbar-style{
+  background-color: hotpink;
+ box-shadow: 0 5px 10px darkgray;
+ text-transform: uppercase;
+ position: fixed;
+   z-index: 1000;
+ width: 100%;
+}
+
+.logo{
+  height: 48px;
+
+}
+.icon-bar{
+  background: black;
+}
+li a{
+  color: white;
+
+}
+/*Banner-Text*/
+.home{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+  min-height: 100vh;
+  align-items: center;
+  background:url(wallpaper1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.home .content{
+  flex:1 1 40rem;
+  padding-top: 6.5rem;
+}
+
+.home .image{
+  flex:1 1 40rem;
+}
+
+.home .image img{
+  width:100%;
+  padding:1rem;
+}
+
+.home .content h3{
+  font-size: 5rem;
+  color:deeppink;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 5px white;
+}
+
+.home .content p{
+  font-size: 1.7rem;
+  color:#666;
+  padding:1rem 0;
+  text-align: center;
+  padding: 30px;
+  margin-left: 20px;
+}
+
+
+
+/*Css for section Image*/
+.container-width{
+  width:90%;
+  max-width:1150px;
+  margin:0 auto;
+}
+.flex-sect{
+  background-color:white;
+  padding:50px 0;
+  font-family:Helvetica, serif;
+}
+.flex-title{
+  margin-bottom:15px;
+  font-size:2em;
+  text-align:center;
+  font-weight:700;
+  color:#555;
+ /* padding:5px;*/
+}
+.flex-desc{
+  margin-bottom:55px;
+  font-size:1em;
+  color:rgba(0, 0, 0, 0.5);
+  text-align:center;
+  padding:5px;
+}
+.cards{
+  padding:20px 0;
+  display:flex;
+  justify-content:space-around;
+  flex-flow:wrap;
+}
+.card{
+  background-color:white;
+  height:300px;
+  width:300px;
+  margin-bottom:30px;
+  box-shadow:0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  border-radius:2px;
+  transition:all 0.5s ease;
+  font-weight:100;
+  overflow:hidden;
+}
+.card:hover{
+  margin-top:-5px;
+  box-shadow:0 20px 30px 0 skyblue;
+}
+.card-header{
+  height:155px;
+  background-image:url("petco.jpg");
+  background-size:cover;
+  background-position:center center;
+}
+.card-header.ch2{
+  background-image:url("pet1.jpg");
+}
+.card-header.ch3{
+  background-image:url("pet2.jpg");
+}
+.card-header.ch4{
+  background-image:url("pet3.jpg");
+}
+.card-header.ch5{
+  background-image:url("pet4.jpg");
+}
+.card-header.ch6{
+  background-image:url("pet1.jpg");
+}
+.card-body{
+  padding:15px 15px 5px 15px;
+  color:#555;
+}
+.card-title{
+  font-size:1.4em;
+  margin-bottom:5px;
+}
+.card-sub-title{
+  color:#b3b3b3;
+  font-size:1em;
+  margin-bottom:15px;
+}
+.card-desc{
+  font-size:0.85rem;
+  line-height:17px;
+}
+
+/*Css for Footer*/
+.text{
+  color: white;
+}
+
+.footer-banner{
+  background-color: #00061a;
+  height: 350px;
+}
+
+.text h1, .text p{
+  text-align: center;
+
+}
+.follow{
+  font-size: 20px;
+  color: yellow;
+}
+
+/*Login*/
+
