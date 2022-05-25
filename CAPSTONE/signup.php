@@ -69,7 +69,12 @@
                     if(strlen($password)>20){
                         $error[]= 'Password: Max length 20 character not allowed!';
                     }
-
+                    //captcha
+                    if ($_POST["vercode"] != $_SESSION["vercode"] OR $_SESSION["vercode"]=='')  {
+                        // echo "<script>alert('Incorrect verification code');</script>" ;
+                        $error[]= 'Incorrect Captcha code!';
+                    } 
+                   
                     $sql = "SELECT * FROM user_form WHERE (username='$username' or email='$email')";
                     $result = mysqli_query($conn, $sql);
 
@@ -115,7 +120,7 @@
                     <?php 
                         if(isset($done)){?>
                     <div class="alert alert-primary text-center" role="alert">You have registered Successfully!
-                        <a href="index.php">Login</a>
+                        <a href="login.php">Login</a>
                     </div>
                     <?php } else {?>
 
@@ -126,16 +131,14 @@
                                 <div class="mb-3 my-3">
                                     <label class="form-label">First Name</label>
                                     <input type="text" class="form-control rounded-pill" autocomplete="off" name="fname"
-                                         required
-                                        value=<?php if(isset($error)){ echo $fname;} ?>>
+                                        required value=<?php if(isset($error)){ echo $fname;} ?>>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="mb-3 my-3">
                                     <label class="form-label">Last Name</label>
                                     <input type="text" class="form-control rounded-pill" autocomplete="off" name="lname"
-                                         required
-                                        value=<?php if(isset($error)){ echo $lname;} ?>>
+                                        required value=<?php if(isset($error)){ echo $lname;} ?>>
                                 </div>
                             </div>
                         </div>
@@ -157,20 +160,28 @@
                             <label class="form-label">Confirm Password</label>
                             <input type="password" class="form-control rounded-pill" name="passwordConfirm">
                         </div>
+                        <div class="form-group small clearfix">
+                            <label class="checkbox-inline">CAPTCHA CODE</label>
+                            <img src="captcha.php">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="vercode" class="form-control" placeholder="Enter here the Captcha Code"
+                                required="required">
+                        </div>
 
-                        <button type="submit" name="signup" class="btn btn-primary mx-auto d-block w-50"
-                            autocomplete="off">Submit</button>
-
-                    </form>
-
-                    <p class="text-dark text-center my-3">Already have an Account? <a href="index.php">Sign In</a></p>
                 </div>
-            </div>
-            <?php }?>
-            <div class="col-sm-4">
 
+                <button type="submit" name="signup" class="btn btn-primary mx-auto d-block w-50"
+                    autocomplete="off">Submit</button>
+
+                </form>
+
+                <p class="text-dark text-center my-3">Already have an Account? <a href="login.php">Sign In</a></p>
             </div>
         </div>
+        <?php }?>
+
+    </div>
     </div>
 </body>
 

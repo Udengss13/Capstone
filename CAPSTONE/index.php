@@ -46,9 +46,9 @@
                                 Login
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="admin\login_admin.php">Administrator</a></li>
+                                <li><a class="dropdown-item" href="login.php">user</a></li>
+                                
                             </ul>
                         </div>
                     </li>
