@@ -1,33 +1,27 @@
 <?php
-    session_start();
+include 'connection.php'
+
+
+// $toSearch=" ";
+// if(isset($_SESSION["search"])){
+// 	$toSearch=$_SESSION["search"];
+// }
+// if(isset($_GET["search"])){
+// 	$_SESSION["search"]=$_GET["search"];
+// 	$toSearch=$_GET["search"];
+// }
 ?>
-
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html></html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Activity 3</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
-
-    <title>Login</title>
-	<style>
-body {
-  font-family: "Lato", sans-serif;
-}
-.bb {
-  margin-left: 40px;
-}
-
-
-</style>
-</head>
-
-
+    
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <nav class="navbar navbar-expand-lg sticky-top bg-blue">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -61,10 +55,9 @@ body {
             </div>
         </div>
     </nav>
-
-<div id="mySidenav" class="sidenav">
+    <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="" class="admin">Administrator</a>
+  <a href="">Administrator</a>
   <a href="users.php">User</a>
   <a href="#">Menu</a>
   <a href="#">Add Menu</a>
@@ -80,17 +73,63 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 </script>
+<form action="" method="GET">
+				<input type="search" name="search" style="width:80%" placeholder="Search" value="<?php echo $toSearch; ?>">
+				<input type="submit" style="width:10%" value="Go" id="go" class="btn btn-primary" style="padding: 10px;">
+			</form>
    
-</body>
-</html> 
-
+<table class="container table table-bordered tbl " style="border-colapse:colapse;">
 	
+	<tr>
+		<th>User ID</th>
+		<th>First Name</th>
+		<th>Last Name</th>
+		<th>User Name</th>
+		<th>Email</th>
+		<th id="modButtons">Actions</th>
+	</tr>
+	<?php
+		//Load up variables
+		// $xml = new domdocument();
+		// $xml->load('xml.xml');
+		// $songs = $xml->getElementsByTagName("song");
+        $sql = "SELECT * FROM user_form";
+        $result = mysqli_query($conn, $sql);
+  
 
-	
+		//Check for search
+		//Cache all values inside cache string
+		//Perform a match between the cached string to toSearch
+		//If matched, then display
+		while ($row=mysqli_fetch_assoc($result)) {
+			$cacheString = "";
+			$id = $row['id'];
+            $fname = $row['fname'];
+            $lname = $row['lname'];
+            $username = $row['username'];
+            $email = $row['email'];
+            
+        // }
+		// 	//Now check if cachedstring contains the search string
+		// 	if(str_contains(strtolower($toSearch) )){
+				echo "<tr>";
+				echo "<td>$id</td>";
+				echo "<td>$fname</td>";
+				echo "<td>$lname</td>";
+				echo "<td>$username</td>";
+                echo "<td>$email</td>";
+                
+				echo "<td>
+						<form action='modify.php' method='GET'>						
+							<input type='submit' value='Delete' name='action' id='delete'>
+						</form>
+					</td>";
+	 }
+        // if (strpos($haystack, $needle) !== false) {
+  // haystack contains needle
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-</script>
+	?>
+</table>
 </body>
-
 </html>
+?>
