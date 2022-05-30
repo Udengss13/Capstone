@@ -92,24 +92,24 @@ body{
 }
 .card-header{
   height:155px;
-  background-image:url("petco.jpg");
+  background-image:url("asset/petco.jpg");
   background-size:cover;
   background-position:center center;
 }
 .card-header.ch2{
-  background-image:url("pet1.jpg");
+  background-image:url("asset/pet1.jpg");
 }
 .card-header.ch3{
-  background-image:url("pet2.jpg");
+  background-image:url("asset/pet2.jpg");
 }
 .card-header.ch4{
-  background-image:url("pet3.jpg");
+  background-image:url("asset/pet3.jpg");
 }
 .card-header.ch5{
-  background-image:url("pet4.jpg");
+  background-image:url("asset/pet4.jpg");
 }
 .card-header.ch6{
-  background-image:url("pet1.jpg");
+  background-image:url("asset/pet1.jpg");
 }
 .card-body{
   padding:15px 15px 5px 15px;

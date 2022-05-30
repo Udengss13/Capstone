@@ -8,6 +8,8 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Login</title>
+
+
 </head>
 
 <body>
@@ -19,6 +21,7 @@
             <div class="col-sm-4">
                 <div class="container shadow-lg p-3 mb-5 bg-body rounded my-3 ">
                     <?php
+                        
                         if(isset($_GET['loginerror'])){
                             $loginerror = $_GET['loginerror'];
                         }
@@ -28,13 +31,13 @@
                           <strong>Invalid Username or Password</strong></svg></div>';
                         }
                     ?>
-                    <img src="Capstone/CAPSTONE/logo.png" class="logo img-fluid" alt="logo" style="height: 230px; width: 500px">
+                    <img src="admin_logo.png" class="logo img-fluid" alt="logo" style="height: 230px; width: 500px">
 
                     <form action="login_admin_process.php" method="POST">
                         <div class="mb-3">
                             <label class="form-label">Username</label>
                             <input type="text" name="username" class="form-control rounded-pill" autocomplete="off"
-                                value="<?php if(!empty($loginerror)){ echo $loginerror; } ?>">
+                                value="<?php if(!empty($loginerror)){ echo $loginerror; } ?>" require>
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Password</label>

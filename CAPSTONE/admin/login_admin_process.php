@@ -6,6 +6,7 @@
     {
         $user = mysqli_real_escape_string($conn, $_POST['username']);
         $password = mysqli_real_escape_string($conn, $_POST['password']);
+
     
         $sql = "SELECT * FROM `admin_db` WHERE BINARY username = '$user'  and BINARY password='$password'";
         $result = mysqli_query($conn, $sql);

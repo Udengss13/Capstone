@@ -69,11 +69,13 @@
                     if(strlen($password)>20){
                         $error[]= 'Password: Max length 20 character not allowed!';
                     }
-                    //captcha
+                    
                     if ($_POST["vercode"] != $_SESSION["vercode"] OR $_SESSION["vercode"]=='')  {
                         // echo "<script>alert('Incorrect verification code');</script>" ;
                         $error[]= 'Incorrect Captcha code!';
                     } 
+                   
+
                    
                     $sql = "SELECT * FROM user_form WHERE (username='$username' or email='$email')";
                     $result = mysqli_query($conn, $sql);
@@ -162,13 +164,13 @@
                         </div>
                         <div class="form-group small clearfix">
                             <label class="checkbox-inline">CAPTCHA CODE</label>
-                            <img src="captcha.php">
+                            <img src="captcha.php" alt="Captcha image">
                         </div>
                         <div class="form-group">
-                            <input type="text" name="vercode" class="form-control" placeholder="Enter here the Captcha Code"
-                                required="required">
+                            <input type="text" name="vercode" class="form-control"
+                                placeholder="Enter here the Captcha Code" required="required">
                         </div>
-
+                        
                 </div>
 
                 <button type="submit" name="signup" class="btn btn-primary mx-auto d-block w-50"

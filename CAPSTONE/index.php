@@ -18,7 +18,7 @@
     <nav class="navbar navbar-expand-lg bg-deepink sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="logo.png" alt="Logo" class="imglogo" style="width:100%; height:8vh" />
+                <img src="asset/logopet.png" alt="Logo"  style="width:100%; height:8vh" />
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -48,7 +48,7 @@
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                 <li><a class="dropdown-item" href="admin\login_admin.php">Administrator</a></li>
                                 <li><a class="dropdown-item" href="login.php">user</a></li>
-                                
+
                             </ul>
                         </div>
                     </li>
@@ -61,8 +61,9 @@
             <div class="row">
                 <div class="col-md-6 col-lg-6">
                     <div class="content mt-4">
-                        <h3 >Petco Shop</h3>
-                        <p class="text-wrap text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
+                        <h3>Petco Shop</h3>
+                        <p class="text-wrap text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Voluptas
                             accusamus tempore
                             temporibus rem amet laudantium animi optio voluptatum. Natus obcaecati unde porro nostrum
                             ipsam itaque impedit, Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
@@ -79,7 +80,7 @@
                 </div>
                 <div class="col-md-6 col-lg-6 ">
                     <div class="image mt-4 mb-4 ">
-                        <img src="pets.png" class="img-responsive" alt="Image Body">
+                        <img src="asset/pets.png" class="img-responsive" alt="Image Body">
                     </div>
                 </div>
             </div>
