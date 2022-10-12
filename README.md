@@ -1,2 +1,1 @@
-# Capstone
-Thesis
+# -capstone101
